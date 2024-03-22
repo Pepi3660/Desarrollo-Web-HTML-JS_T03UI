@@ -1,0 +1,121 @@
+/* Estilo del cuerpo del HTML */
+body {
+  background: beige;
+  color: black;
+  font-family: Verdana, sans-serif;
+  margin: 20px;
+}
+
+/* Estilos de los encabezados */
+h2 {
+  text-align: center;
+}
+
+/*Estilos de parrafos*/
+p{
+  text-align: center;
+}
+
+/* Estilos de las secciones */
+section {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del formulario */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Estilos de las etiquetas */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilos de los inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form textarea,
+form select {
+  width: calc(100% - 22px);
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilos de los radio buttons */
+form input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Estilos para el grupo de radio buttons */
+.radio-group {
+  margin-bottom: 10px;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los inputs de género */
+.gender-inputs {
+  display: flex;
+}
+
+.gender-inputs input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Estilo para el botón de registrar */
+form button {
+  background: black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+form button:hover {
+  background: #ff6347;
+}
+
+/* Estilo para la alineación horizontal del checkbox y el botón */
+form .checkbox-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+form #terms {
+  margin-right: 10px;
+}
+
+/* Selector de etiqueta para textarea */
+textarea {
+  width: 200px;
+}
+
+/* Selector de input para email */
+input[name="email"] {
+  background-color: #eeeeee;
+}
+
+/* Selector múltiple para párrafos y etiquetas */
+p, label {
+  font-family: Tahoma, sans-serif;
+}

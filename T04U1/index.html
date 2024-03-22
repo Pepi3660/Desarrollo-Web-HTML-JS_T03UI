@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta name="author" content="Ricardo Alvarez">
+   <meta name="description" content="T04U1: Registro en nuestra Tienda">
+   <title>Registro de nuestra Tienda</title>
+   <link rel="stylesheet" type="text/css" href="styles/style.css">
+   <link rel="icon" href="images/Icon.jpg">
+</head>
+<body>
+    <section>
+        <h2>REGISTRO DE NUESTRA TIENDA</h2>
+        <p>¿Tienes preguntas o sugerencias? No dudes en contactarnos.</p>
+        <form>
+            <label for="name">Nombre de Usuario:</label>
+            <input type="text" id="name" placeholder="Ej: José" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.con" name="email" required>
+            
+            <label for="age">Edad:</label>
+            <input type="text" id="age" placeholder="Ej: 22" name="age" required>
+            
+            <label for="Fecha">Fecha de Nacimiento:</label>
+            <input type="date-time" id="Fecha" placeholder="dd/mm/aaaa" name="Fecha" required>
+            
+            <div class="radio-group">
+                <label>Género:</label>
+                <div class="gender-inputs">
+                    <input type="radio" id="masculino" name="Genero" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="Genero" required>
+                    <label for="femenino">Femenino</label>
+                </div>
+            </div>
+            
+            <label for="Recomendado">Recomendado por:</label>   
+            <select id="Recomendado" name="Recomendado">
+                <option value="Google">Google</option>
+                <option value="Microsoft">Microsoft</option>
+                <option value="Udemy">Udemy</option>
+            </select>
+            
+            <label for="message">Comentarios:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <div class="checkbox-button-wrapper">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Acepto términos y condiciones</label>
+            </div>
+       
+            <button type="submit">Registrar</button>
+        </form>
+    </section>  
+</body>
+</html>
