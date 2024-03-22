@@ -1,0 +1,236 @@
+/*style body*/
+body{
+  display:flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  min-height: 100vh;
+  color:beige !important;
+  margin: 0;
+  background-image: url("../images/BackgroundPage.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/*Estilo del menu*/
+.menu {
+  list-style: none; 
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  background: black;
+  display:flex; 
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.menu li{
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a{
+  text-decoration: none; 
+  color: beige;
+  font-weight: bold;
+  padding: 20px;
+  display: block; 
+  transition: background 0.3s ease;
+}
+
+.menu li:hover{ 
+  background: #ef8354;
+}
+
+/*estilos para titulos por nivel*/
+h1{
+  font-weight: bold;
+  text-align: center;
+}
+
+h2{
+  font-weight: bold;
+  text-align: center;
+}
+
+h3{
+  font-weight: bold;
+  text-align: center;
+}
+
+/*estilo para parrafos*/
+p{
+  text-align: justify;
+}
+
+/*estilo para enlaces*/
+a{
+  text-decoration: none;
+  color: orangered;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .menu li{
+    margin:10px 0;
+  }
+}
+
+@media only screen and (min-width: 601px){
+  .menu{
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .menu li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+/*estilos de las secciones*/
+section {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); 
+  margin: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+/*estilo para pie de pagina*/
+footer{
+  background: black;
+  padding: 20px;
+  display: block; 
+  margin-top: auto;
+}
+/*texto del pie de pagina*/
+.ftp{
+ text-align: center !important; 
+}
+
+/*estilo de formulario*/
+form{
+  display:flex; 
+  flex-direction: column; 
+  max-width: 400px; 
+  margin: auto;
+}
+/*texto del formulario*/
+.Pform{
+  text-align: center !important;
+}
+
+form label{
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea{
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: black;
+  color:beige;
+}
+
+form button {
+  background: black;
+  color: beige;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+    background: #ef8354;
+}
+
+/*estilo de imagen*/
+.mediaImg{
+  display:block;
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/*estilo para inputs*/
+#search-container{
+  display:flex;
+  align-items: center;
+}
+
+/*estilo de buscador*/
+#search {
+  padding: 12px;
+  background: black;
+  color: beige;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 70px;
+  transition: width 0.4s ease-in-out;
+  margin-bottom: 10px;
+}
+
+#search:focus {
+    width: 150px;
+ }
+
+#search-icon {
+  background: black;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#search-icon img {
+  border-radius:8px;
+  width: 15px; 
+  height: 15px;
+}
+
+/* Estilos para los botones de scroll */
+.scroll-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-buttons button {
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: beige;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.scroll-buttons button:hover {
+  background-color: orangered;
+}
