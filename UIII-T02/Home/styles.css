@@ -1,0 +1,406 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: white;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 10px;
+    z-index: 999; /*nav encima del contenido*/
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    transition: width 0.5s; /* Solo anima el ancho para una transición suave */
+}
+
+.sidebar.active {
+    width: 250px; /* Aumenta el ancho cuando el menú está activo */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li:first-child {
+    margin-top: 150px; /* Ajusta el valor del margen superior */
+}
+
+.sidebar ul li {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem; /* Aumenta el tamaño del texto del menú */
+}
+
+.sidebar ul li a {
+    color: beige;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ef8354;
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url("hero-background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section .wrapper {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-section .logo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.hero-section .sub-heading {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Testimonials sections estilos */
+.testimonial-section {
+    padding: 50px 0; /* Espaciado alrededor de la sección de testimonios */
+    background-color: #fff; /* Color de fondo para la sección de testimonios */
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los testimonios se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra los testimonios horizontalmente */
+    gap: 20px; /* Espacio entre testimonios */
+    padding: 10px; /* Espaciado interno */
+}
+
+.testimonial {
+    flex-basis: calc(40% - 20px); /* Establece la base de flexibilidad para dos columnas */
+    max-width: calc(40% - 20px); /* Ancho máximo de cada testimonio */
+    border: 1px solid #ccc; /* Borde para cada testimonio */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    background-color: #fff; /* Color de fondo de cada testimonio */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+
+.testimonial-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        flex-basis: calc(100% - 20px); /* En dispositivos más pequeños, muestra un testimonio por fila */
+        max-width: calc(100% - 20px); /* Ancho máximo de cada testimonio en dispositivos más pequeños */
+    }
+}
+/* Footer section */
+.footer-container {
+    width: 100%;
+    align-content: center;
+    background-color: black;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-container .wrapper{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: beige;
+}
+
+.tittle-media {
+    color: beige;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column li {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-media-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.additional-info {
+    text-align: center;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.additional-info p {
+    margin-bottom: 5px;
+}
+
+.Follow-Us {
+    text-align: center;
+}
+
+.additional-info p {
+    margin-bottom: 5px;
+}
+
+/* Estilos de la nueva sección 1: Foto grande estilo banner */
+.sidebar.active {
+    z-index: 2; /* Asegura que el menú esté por encima del banner cuando esté activo */
+}
+
+.banner-section {
+    position: relative;
+    z-index: 1; /* Asegura que el banner esté por encima del contenido, pero por debajo del menú */
+}
+
+.banner-image {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    right: 10%; /* Ajusta el valor para la posición del texto */
+    transform: translateY(-40%);
+    text-align: right;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.banner-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos de la nueva sección 2: Dos imágenes y un recuadro de texto */
+.feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.feature-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.feature-text {
+    text-align: center;
+}
+
+.feature-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.feature-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.shop-now-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shop-now-button:hover {
+    background-color: #ef8354;
+}
+
+/* Estilos de la nueva sección 3: Rectángulo negro con texto */
+.delivery-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.delivery-text {
+    padding: 20px;
+}
+
+.delivery-text p {
+    font-size: 1.2rem;
+}
+
+/* Estilos de la nueva sección 4: cuatro fotos */
+.photo-grid {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-image {
+    width: 70%;
+    height: 650px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la nueva sección 5: Dos imágenes y texto a la izquierda */
+.yoga-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.yoga-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.yoga-image {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+.yoga-text {
+    text-align: center;
+}
+
+.yoga-text h3 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.yoga-text p {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.yoga-shop-now-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.yoga-shop-now-button:hover {
+    background-color: #ef8354;
+}

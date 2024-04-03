@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style-about-us.css">
+  <title>About Us</title>
+  <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.addEventListener('click', function(event) {
+                var sidebar = document.getElementById("sidebar");
+                var hamburger = document.querySelector('.hamburger');
+                if (!sidebar.contains(event.target) && !hamburger.contains(event.target) && sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+  </script>
+</head>
+<body>
+  <div class="navbar">
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>      
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">    
+        <ul>
+            <li><a href="../Home/index.html">HOME</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+            <li><a href="../Contact Us/Contact Us.html">CONTACT US</a></li>
+            <li><a href="../Products/Products.html">PRODUCTS</a></li>
+        </ul>
+  </div>
+  <div class="content-container">
+     <section class="about-us-section">
+        <div class="about-us-content">
+          <div class="about-us-image">
+            <img class="about-us-icon" src="images/logo.jpg" alt="About Us Image">
+          </div>
+          <div class="about-us-text">
+            <h2>About Us</h2>
+            <p>Welcome to Sport Store! We are passionate about providing high-quality sports gear and equipment to athletes of all levels. Our mission is to help you achieve your fitness and performance goals by offering a wide range of products at competitive prices.</p>
+          </div>
+        </div>
+     </section>
+     <section class="services-section">
+        <div class="services-image">
+            <img class="services-icon" src="images/Services.jpg" alt="About Us Image">
+        </div>
+       <div class="services-content">
+          <h2>Our Services</h2>
+          <p>We offer a wide range of services tailored to meet the needs of athletes of all levels. From personalized training programs to nutritional counseling, were here to help you reach your fitness goals.</p>
+       </div>
+     </section>
+
+     <section class="mission-section">
+         <div class="mission-content">
+            <div class="mission-image">
+               <img class="mission-icon" src="images/Mission.jpg" alt="About Us Image">
+            </div>
+            <h2>Mission</h2>
+            <p>Our mission is to inspire and empower athletes to achieve their full potential. Were committed to providing high-quality sports gear and equipment, along with expert guidance and support, to help our customers succeed in their athletic pursuits.</p>
+         </div>
+     </section>
+
+     <section class="vision-section">
+         <div class="vision-image">
+            <img class="vision-icon" src="images/Vision.jpg" alt="About Us Image">
+         </div>
+         <div class="vision-content">
+             <h2>Vision</h2>
+             <p>Our vision is to create a community where everyone can enjoy the benefits of an active lifestyle. We strive to be a trusted partner for athletes worldwide, offering innovative products, exceptional service, and a commitment to excellence in everything we do.</p>
+         </div>
+     </section>
+     <section class="values-section">
+          <div class="values-image">
+              <img class="values-icon" src="images/Values.jpg" alt="About Us Image">
+          </div>
+          <h2>Our Values</h2>
+          <ul>
+             <li><strong>Excellence:</strong> We strive for excellence in everything we do, from the quality of our products to the level of service we provide.</li>
+             <li><strong>Integrity:</strong> We operate with honesty, transparency, and integrity in all our interactions with customers, suppliers, and partners.</li>
+             <li><strong>Innovation:</strong> We embrace innovation and continuously seek new ways to improve and evolve, ensuring we stay ahead of the curve.</li>
+             <li><strong>Community:</strong> We believe in the power of community and strive to create a supportive and inclusive environment for all athletes.</li>
+             <li><strong>Passion:</strong> We are passionate about sports and fitness, and were dedicated to helping our customers pursue their athletic goals with enthusiasm and determination.</li>
+          </ul>
+     </section>
+  </div>
+  <footer class="footer-container">
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>Gift Cards</h3>
+            <ul>
+                <li>Find a Store</li>
+                <li>Become a Member</li>
+                <li>Student Discounts</li>
+                <li>Feedback</li>
+                <li>Promotional Codes</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Help</h3>
+            <ul>
+                <li>Get Help</li>
+                <li>Order Status</li>
+                <li>Shipping & Delivery</li>
+                <li>Returns</li>
+                <li>Payment Options</li>
+                <li>Contact</li>
+                <li>Reviews</li>
+                <li>Help with Codes</li>
+                <li>Promotions</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li>About Our Store</li>
+                <li>News</li>
+                <li>Careers</li>
+                <li>Investors</li>
+                <li>Sustainability</li>
+                <li>Mission</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Redes sociales -->
+    <div class="tittle-media">
+      <h3>Follow Us:</h3>  
+    </div>  
+    <div class="footer-social-media">   
+        <a href="#"><img class="social-media-icon" src="images/facebook.jpg" alt="Facebook"></a>
+        <a href="#"><img class="social-media-icon" src="images/x.jpg" alt="Twitter"></a>
+        <a href="#"><img class="social-media-icon" src="images/ig.jpg" alt="X"></a>
+        <a href="#"><img class="social-media-icon" src="images/snapchat.jpg" alt="Snapchat"></a>
+    </div>
+    <div class="additional-info">
+        <p>Guides | Terms of Use | Sales Terms | Legal Notices | Privacy & Cookies Policy | Cookies Settings</p>
+        <p>© 2024 Sport Store. All rights reserved.</p>
+        <p>Location: Nicaragua</p>
+    </div>
+  </footer>
+</body>
+</html

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Contact-Style.css">
+    <title>Contact Us</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.addEventListener('click', function(event) {
+                var sidebar = document.getElementById("sidebar");
+                var hamburger = document.querySelector('.hamburger');
+                if (!sidebar.contains(event.target) && !hamburger.contains(event.target) && sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="menu">
+            <div class="hamburger" onclick="toggleSidebar()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>      
+            </div>
+        </div>
+        <!-- Icono del carrito al final del menú -->
+        <a href="../Shopping Cart/Shopping Cart.html" class="cart-icon">
+            <img src="images/cart-icon.jpg" alt="Cart">
+        </a>
+    </div>
+
+    <div class="sidebar" id="sidebar">    
+        <ul>
+            <li><a href="../Home/index.html">HOME</a></li>
+            <li><a href="../About Us/About Us.html">ABOUT US</a></li>
+            <li><a href="Contact Us.html">CONTACT US</a></li>
+            <li><a href="../Products/Products.html">PRODUCTS</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <section class="banner-section">
+            <img src="images/Banner_ContactUs.jpg" alt="Contact Us Banner" class="banner-image">
+            <div class="banner-text">
+                <h2>CONTACT US</h2>
+                <p>Have questions? Feel free to contact us.</p>
+            </div>
+        </section>
+
+        <section class="images-section">
+            <div class="image-container">
+                <img src="images/Visit.jpg" alt="Visit Us">
+                <h3>Explore Our Store</h3>
+                <p>Visit our store to discover the latest trends and gear up for your active lifestyle.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/Call.jpg" alt="Call Us">
+                <h3>Get Personalized Advice</h3>
+                <p>Call us for expert advice on selecting the perfect sports attire and equipment.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/Message.jpg" alt="Contact Us">
+                <h3>Reach Out to Us</h3>
+                <p>Contact us directly to inquire about products, orders, or any other questions you may have.</p>
+            </div>
+        </section>
+        <section class="contact-form-section">
+            <h2>Contact Us</h2>
+            <p>Feel free to contact us and will get
+                back to you as soon as we can.
+            </p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7621.727478165107!2d-86.27949894167895!3d12.12957696004334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73e1fb105d3f23%3A0x82c7cb58001c9dc2!2sNicaragua!5e0!3m2!1sen!2sus!4v1648613314112!5m2!1sen!2sus" allowfullscreen loading="lazy"></iframe>
+        </div>    
+    </div>
+    <footer class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Gift Cards</h3>
+                <ul>
+                    <li>Find a Store</li>
+                    <li>Become a Member</li>
+                    <li>Student Discounts</li>
+                    <li>Feedback</li>
+                    <li>Promotional Codes</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li>Get Help</li>
+                    <li>Order Status</li>
+                    <li>Shipping & Delivery</li>
+                    <li>Returns</li>
+                    <li>Payment Options</li>
+                    <li>Contact</li>
+                    <li>Reviews</li>
+                    <li>Help with Codes</li>
+                    <li>Promotions</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li>About Our Store</li>
+                    <li>News</li>
+                    <li>Careers</li>
+                    <li>Investors</li>
+                    <li>Sustainability</li>
+                    <li>Mission</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Redes sociales -->
+        <div class="tittle-media">
+            <h3>Follow Us:</h3>  
+        </div>  
+        <div class="footer-social-media">   
+            <a href="#"><img class="social-media-icon" src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img class="social-media-icon" src="images/x.jpg" alt="Twitter"></a>
+            <a href="#"><img class="social-media-icon" src="images/ig.jpg" alt="X"></a>
+            <a href="#"><img class="social-media-icon" src="images/snapchat.jpg" alt="Snapchat"></a>
+        </div>
+        <div class="additional-info">
+            <p>Guides | Terms of Use | Sales Terms | Legal Notices | Privacy & Cookies Policy | Cookies Settings</p>
+            <p>© 2024 Sport Store. All rights reserved.</p>
+        <p>Location: Nicaragua</p>
+    </div>
+  </footer>
+</body>
+</html>

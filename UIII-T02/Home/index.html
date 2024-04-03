@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Store</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.addEventListener('click', function(event) {
+                var sidebar = document.getElementById("sidebar");
+                var hamburger = document.querySelector('.hamburger');
+                if (!sidebar.contains(event.target) && !hamburger.contains(event.target) && sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</head>
+<body> 
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>      
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">    
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="../About Us/About Us.html">ABOUT US</a></li>
+            <li><a href="../Contact Us/Contact Us.html">CONTACT US</a></li>
+            <li><a href="../Products/Products.html">PRODUCTS</a></li>
+        </ul>
+    </div>
+    <header class="hero-section">
+        <div class="wrapper">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Sport Store" class="logo">
+            </div>
+            <h1 class="sub-heading">Welcome to our Sport Store!</h1>
+        </div>
+    </header>
+
+    <!-- Sección 1: Foto grande estilo banner -->
+    <section class="banner-section">
+        <img src="images/Banner.jpg" alt="Banner" class="banner-image">
+        <div class="banner-text">
+           <h2>Sporty Look</h2>
+           <p>Explore our latest sportswear collection for the ultimate athletic style.</p>
+        </div>
+    </section>
+
+    <!-- Sección 2: Dos imágenes y un recuadro de texto -->
+    <section class="feature-section">
+        <div class="feature-images">
+            <img src="images/Leggins1.jpg" alt="Image 1" class="feature-image">
+            <img src="images/Leggins2.jpg" alt="Image 2" class="feature-image">
+        </div>
+        <div class="feature-text">
+            <h2>NEW COLLECTION</h2>
+            <p>YOUR HUNT FOR THE PERFECT LEGGINS ENDS HERE!!</p>
+            <button class="shop-now-button">SHOP NOW</button>
+        </div>
+    </section>
+
+    <!-- Sección 3: Rectángulo negro con texto -->
+    <section class="delivery-section">
+        <div class="delivery-text">
+            <p>EXPRESS DELIVERY AND FREE RETURNS WITHIN 28 DAYS</p>
+        </div>
+    </section>
+
+    <!-- Sección 4: 2 fotos -->
+    <section class="photo-grid">
+        <div class="grid-images">
+            <img src="images/A1.jpg" alt="Image 3" class="grid-image">
+            <img src="images/A2.jpg" alt="Image 4" class="grid-image">
+        </div>
+    </section>
+   <section class="yoga-section">
+       <div class="yoga-content">
+          <h3>YOGA SET</h3>
+          <p>Discover our new collection of yoga sets designed to provide you with comfort and style during your practices. Find the perfect set for you!</p>
+          <button class="shop-now-button">SHOP NOW</button>
+      </div>
+      <div class="yoga-images">
+          <img src="images/yoga1.jpg" alt="Yoga 1" class="yoga-image">
+          <img src="images/yoga2.jpg" alt="Yoga 2" class="yoga-image">
+      </div>
+   </section>
+   <section class="photo-grid">
+        <div class="grid-images">
+            <img src="images/A3.jpg" alt="Image 5" class="grid-image">
+            <img src="images/A4.jpg" alt="Image 5" class="grid-image">   
+            <img src="images/A5.jpg" alt="Image 5" class="grid-image">      
+        </div>
+    </section>
+   <!-- Testimonials Section -->
+    <div class="testimonial-section">
+      <h3>TESTIMONIALS</h3>
+        <div class="testimonial-container">
+         <div class="testimonial">
+                <img src="images/Jessie S.jpg" alt="Testimonial 1" class="testimonial-image">
+                <p class="testimonial-text">"Excellent service, I am very pleased with my purchase."</p>
+                <p class="testimonial-author">- Jessie Smith</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/Sarah Montiel.jpg" alt="Testimonial 2" class="testimonial-image">
+                <p class="testimonial-text">"I've been a loyal customer for years, and Sport Store never disappoints. Their customer service is second to none, and the range of products is unbeatable. 10/10 recommend!"</p>
+                <p class="testimonial-author">- Sarah Montiel</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/Jeoung Seok-ho.jpg" alt="Testimonial 3" class="testimonial-image">
+                <p class="testimonial-text"> "Incredible shopping experience! I will definitely return."</p>
+                <p class="testimonial-author">- Jeoung Seok-ho</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/Maria Rodriguez.jpg" alt="Testimonial 4" class="testimonial-image">
+                <p class="testimonial-text">"Absolutely fantastic service! From browsing the website to receiving my order, everything was seamless. Will definitely be recommending to friends and family."</p>
+                <p class="testimonial-author">- María Rodríguez</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/Alice Bell.jpg" alt="Testimonial 5" class="testimonial-image">
+                <p class="testimonial-text">"I couldn't be happier with my purchase! The quality of the products exceeded my expectations, and the delivery was incredibly fast."</p>
+                <p class="testimonial-author">- Alice Bell</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Gift Cards</h3>
+                <ul>
+                    <li>Find a Store</li>
+                    <li>Become a Member</li>
+                    <li>Student Discounts</li>
+                    <li>Feedback</li>
+                    <li>Promotional Codes</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li>Get Help</li>
+                    <li>Order Status</li>
+                    <li>Shipping & Delivery</li>
+                    <li>Returns</li>
+                    <li>Payment Options</li>
+                    <li>Contact</li>
+                    <li>Reviews</li>
+                    <li>Help with Codes</li>
+                    <li>Promotions</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li>About Our Store</li>
+                    <li>News</li>
+                    <li>Careers</li>
+                    <li>Investors</li>
+                    <li>Sustainability</li>
+                    <li>Mission</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Redes sociales -->
+        <div class="tittle-media">
+            <h3>Follow Us:</h3>  
+        </div>  
+        <div class="footer-social-media">   
+            <a href="#"><img class="social-media-icon" src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img class="social-media-icon" src="images/x.jpg"alt="Twitter">
+            <a href="#"><img class="social-media-icon" src="images/ig.jpg" alt="Instagram"></a>
+            <a href="#"><img class="social-media-icon" src="images/snapchat.jpg" alt="Snapchat"></a>
+        </div>
+        <div class="additional-info">
+            <p>Guides | Terms of Use | Sales Terms | Legal Notices | Privacy & Cookies Policy | Cookies Settings</p>
+            <p>© 2024 Sport Store. All rights reserved.</p>
+            <p>Location: Nicaragua</p>
+        </div>
+    </footer>
+</body>
+</html>
